@@ -1,0 +1,1229 @@
+html
+{
+	min-height: 100% !important;
+	height: 100%;
+}
+
+body
+{
+	background-color: #fff;
+	margin-top:0;
+	font-family: verdana, sans-serif;
+	font-size: 12px;
+}
+
+#container
+{
+	width: 1220px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header
+{
+	width: 1220px;
+	background-image:url(header.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+header:hover
+{
+	cursor: pointer;
+}
+
+header::after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+img
+{
+	display: block;
+	max-width: 100%;
+	height:auto;
+}
+
+#logo
+{
+	width: 289px;
+	float: left;
+}
+
+#logo:hover
+{
+	cursor: pointer;
+}
+
+#banner
+{
+	width: 931px;
+	height: 291px;
+	float: left;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+}
+
+#top
+{
+	width: 931px;
+}
+
+#top:hover
+{
+	cursor: pointer;
+}
+
+nav
+{
+	width: 931px;
+	background-color: rgba(255, 255, 255, 0.7);
+	display: flex;
+	margin: 0;
+	padding: 0;
+	font-size: 1.3em;
+}
+
+nav:hover
+{cursor: auto;}
+
+/*nav input search*/
+nav > form
+{
+	flex:1;
+	margin: auto 15px auto 100px;
+	padding: auto;
+	display: flex;
+	align-self: flex-end;
+	font-size: 1em;
+	position: relative;
+	height: 2.5em;
+}
+
+nav > ol > a 
+{
+	display: none;
+}
+nav > ol > a > i
+{
+	display: none;
+}
+
+nav > form > input
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 2.5em;
+	border: none;
+}
+
+nav > form span
+{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	height: 1.5em;
+
+}
+
+nav > form span img
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+/*end*/
+
+
+/*horizontal menu*/
+nav > ol
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	flex-basis: 700px;
+	flex:4;
+	display: flex;
+	align-self: flex-start;
+	
+}
+
+
+
+nav > ol > li
+{
+	height: 53px;
+	line-height: 53px;
+	flex: 1;
+	align-items: flex-start;
+	
+}
+
+nav > ol > li:first-child+li+li
+{
+	flex:2;
+}
+
+
+
+/*link nav*/
+nav > ol > li > a
+{
+	height: 53px;
+	width: 100%;
+	text-align: center;
+}
+
+nav > ol > li > a:hover
+{
+	background-color: #fff;
+}
+
+nav > ol > li:hover > a
+{
+	display: block;
+}
+
+
+
+/*for all ol lists*/
+ol li a
+{
+	text-decoration: none;
+	display: block;
+	color: #000;
+}
+
+
+
+#wrapper
+{
+	width: 1220px;
+	margin: 33px 0;
+}
+
+#wrapper::after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#investpol_logo{
+    width: 100%;
+    height: 47px;
+    background-image: url(img/investpol_logo.png);
+    background-repeat: no-repeat;
+}
+
+#producents {
+    width: 500px;
+    height: 67px;
+    margin: 0 30% 0 29%;
+    margin-bottom: 8%;
+}
+
+#illbruck{
+    width: 40%;
+    height: 67px;
+    background-image: url(img/illbruck_logo.png);
+    background-repeat: no-repeat;
+    margin: 5%;
+    float: left;
+}
+
+#exte {
+    width: 40%;
+    height: 50px;
+    background-image: url(img/exte_logo.png);
+    background-repeat: no-repeat;
+    margin:5%; 
+    float: left;
+}
+
+#gpmm{
+    width: 200px;
+    height: 45px;
+    background-image: url(img/gpmm_logo.png);
+    margin:auto;    
+}
+
+#gp{
+    width: 100%;
+    margin: 0 18% 0 18%;
+}
+
+.gpmm{
+    width: 250px;
+    height: 147px;
+    margin: 3% 2% 3% 2%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+
+
+
+/*vertical menu*/
+#sidemenu
+{
+	width: 289px;
+	background-color: #e7e7e7;
+	padding: 20px 0;
+	float: left;
+	font-size: 1.2em;	
+}
+
+#sidemenu > a
+{
+	display: none;
+}
+
+#sidemenu > a > i
+{
+	display: none;
+}
+
+
+/*li sidemenu*/
+#sidemenu > ol
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+}
+
+#sidemenu > ol > li
+{
+	width: 100%;
+	line-height: 120%;
+}
+
+
+#sidemenu > ol > li:hover > a
+{
+	display: block;
+	background-color: #bebebe;	
+}
+
+#sidemenu > ol > li > a/*width i padding dopasowac*/
+{
+	display: block;
+	width: 85%;
+	padding: 10px 0 10px 15%;
+	line-height: 120%;
+}
+
+#sidemenu > ol > li > a:hover
+{
+	background-color: #bebebe;
+	font-weight: bold;
+}
+
+#sidemenu > ol > li > ol /*hidden*/
+{
+	list-style-type: none;
+	display: none;
+}
+
+#sidemenu > ol > li > ol > li > a
+{
+	display: block;
+}
+
+#sidemenu > ol > li > ol > li
+{
+	width: 100%;
+	position: relative;
+}
+
+#sidemenu > ol > li > ol > li > a/*width i padding dopasowac*/
+{
+	display: block;
+	width: 90%;
+	padding-left: 10%;
+	line-height: 200%;/*dopasować*/
+}
+
+
+#sidemenu > ol > li > ol > li:hover > a
+{
+	text-decoration: underline;
+}
+
+/*products - content*/
+#content
+{
+	width: 900px;
+	margin-left: 31px;
+	float: left;
+} 
+
+.article-wrap
+{
+	width: 100%;
+	margin-bottom: 20px;
+	display: flex;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #cbcbcb;
+
+}
+
+.article-img
+{
+	flex-basis: 168px;
+	order: 1;
+	margin:0;
+
+}
+
+.article-img > img
+{
+	max-width: 168px;
+	height: auto;
+}
+
+.article-text
+{
+	text-align: justify;
+	order:2;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* the order of displaying blocks at articles*/
+.article-wrap:nth-child(even) > .article-img
+{
+	order: 2;
+}
+
+.article-wrap:nth-child(even) > .article-text
+{
+	order:1;
+	padding-right: 32px;
+	flex-basis: 700px;
+}
+
+
+.article-wrap:nth-child(odd) > .article-img
+{
+	order:1;
+}
+
+.article-wrap:nth-child(odd) > .article-text
+{
+	order: 2;
+	padding-left: 32px;
+	flex-basis: 700px;
+}
+/*end*/
+
+
+/*the order of displaying blocks at articles > displaying blocks at .article-text*/
+.article-wrap:nth-child(even) > .article-text > .article-header
+{
+	text-align: right;
+}
+
+.article-wrap:nth-child(even) > .article-text > .article-button
+{
+	text-align: right;
+}
+/*end/
+
+
+/*style for text at article-text*/
+.article-header
+{
+	color: #00519e;
+	font-size: 2em;
+	line-height: 200%;/*zmiana na em pozniej*/
+}
+
+.article-button
+{
+	margin:10px 0;
+}
+
+.article-button > a
+{
+	display: block;
+	text-decoration: none;
+	color: #1967e7;
+	font-size: 1.2em;
+}
+
+span
+{
+	font-weight: bold;
+}
+
+/*contact subpage*/
+
+
+/*advert*/
+aside
+{
+	float: left;
+	width: 289px;
+}
+
+aside:hover
+{
+	cursor: pointer;
+}
+
+/*contact-form*/
+#contact-form
+{
+	float: left;
+	margin: 0 35px 0 0;
+	width: 245px;
+
+}
+
+.input_form
+{
+	max-height: 28px;
+	min-height: 28px;
+	max-width: 210px;
+	min-width: 208px;
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+#contact-form > textarea
+{
+	width: 245px;
+	height: 12em;
+	margin: 15px 0 0 0;
+	padding: 0;
+	box-sizing: border-box;
+	resize: none;
+}
+
+#contact-form  label
+{
+	display: inline-block;
+	width: 32px;
+	height: 28px;
+	margin:0;
+	padding: 0;
+}
+
+#contact-form  label img
+{
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#contact-form > div
+{
+	margin: 0 0 5px 0;
+	padding:0;
+	height: 32px;
+	width:245px;
+}
+
+#contact-form > div:after
+{
+	content: "";
+	clear: both;
+	visibility: hidden;
+	display: block;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#submit
+{
+	background-image: url(sign_form.jpg);
+	display: block;
+	width: 24px;
+	height: 26px;
+	background-repeat: no-repeat;
+	float: right;
+	margin: 15px 0 0 0;
+	border:none;
+	background-size: 100%;
+}
+
+#submit:hover
+{
+	cursor: pointer;
+}
+
+/*map*/
+#map
+{
+	float: left;
+	width: 620px;
+	margin: 0;
+}
+
+#map:after
+{
+	clear: both;
+	display: block;
+	content: "";
+}
+
+/*address*/
+#address_data
+{
+	margin: 5px 0 0 0;
+	padding: 0;
+	font-size: 1.25em;
+}
+
+#address_data span
+{
+	font-weight: normal; 
+}
+
+.address_data_column
+{
+	float: left;
+	margin-right: 30px;
+}
+
+#h4
+{
+	line-height: 100%;
+	color: #1967e7;
+}
+
+#link
+{
+	float: right;
+	text-align: right;
+}
+
+#link a
+{
+	text-decoration: none;
+	color: #75787A;
+}
+
+
+/*main content < strona głowna/o firmie/promocje*/
+h1
+{
+	font-weight: normal;
+	color: #00519e;
+}
+
+#main-content
+{
+	margin: 0;
+	padding: 0 30px;
+	text-align: justify;
+	line-height: 1.5em;
+}
+
+
+footer
+{
+	width: 1220px;
+	padding:20px 0;
+	text-align: center;
+	border-top: 1px solid #bebebe;
+	font-size: 1.2em;
+}
+
+
+article, details, figure, footer, header, nav, section,
+{
+  display: block;
+}
+
+/*@media queries*/
+
+/*width 970px-1239px*/
+@media all and (min-width: 970px) and (max-width: 1239px)
+{
+body
+{
+	margin:0;
+	padding: 0:;
+}
+
+#container
+{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header, footer
+{
+	width: 950px;
+	
+}
+
+#logo, #sidemenu, aside
+{
+	width: 225px;
+}
+
+#sidemenu > a
+{
+	display: none;
+}
+
+#sidemenu > a > i
+{
+	display: none;
+}
+
+nav, #top, #banner
+{
+	width: 725px;
+}
+
+nav
+{
+	font-size: 1em;
+}
+
+#top, 
+{
+	height: 178.55px;
+}
+
+#banner{
+	height: 226.55px;
+}
+nav > ol
+{
+	flex-basis: 458px;
+}
+
+nav > ol > a 
+{
+	display: none;
+}
+nav > ol > a > i
+{
+	display: none;
+}
+
+nav > ol > li
+{
+	height: 48px;
+	line-height: 48px;
+}
+
+nav > ol > li > a
+{
+	line-height: 48px;
+}
+
+nav > form
+{
+	margin: auto 5px auto 60px;
+}
+
+nav > form span
+{
+	top: 5px;
+	right: 15px;
+}
+
+#wrapper
+{
+	width: 950px;
+	margin: 13px 0;
+}
+
+#content
+{
+	width: 710px;
+	margin-left: 15px;
+}
+
+.article-wrap:nth-child(even) > .article-text
+{
+	padding-right: 12px;
+	padding-left: 5px;
+	flex-basis: 525px;
+}
+
+
+.article-wrap:nth-child(odd) > .article-text
+{
+	padding-left: 12px;
+	padding-right: 5px;
+	flex-basis: 525px;
+}
+
+#map
+{
+	width: 455px;
+}
+
+#contact-form
+{
+	margin: 0 10px 0 0;
+}
+
+.address_data_column 
+{
+    float: left;
+    margin-right: 15px;
+}
+
+}
+
+/*width 768px-969px*/
+@media all and (min-width: 768px) and (max-width: 969px)
+{
+
+body
+{
+	width: 100%;
+	margin:0;
+	padding: 0;
+}
+
+#container, footer
+{
+	width: 100%;
+}
+
+header
+{
+	width: 100%;
+	height: auto;
+	background-image: url(header_mini.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#logo
+{
+	width: 30%;
+}
+
+#banner
+{
+	width: 70%;
+	height: auto;
+}
+
+#top
+{
+	visibility: hidden;
+}
+
+/*main nav*/
+nav
+{
+	flex-direction: column;
+	width:100%;
+	margin: 0;
+	align-self: center;
+	margin-top: 0;
+	align-self: all;
+	overflow-y: scroll;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+nav:before
+{
+	display: block;
+	content: "  ";
+	font-size: 30px;
+	float: left;
+	background-image: url(menu.jpg);
+	width: 70px;
+	margin-left: 30px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	background-size: 100%;
+	height: 70px;
+	cursor: pointer;
+}
+
+nav > ol
+{
+	flex-direction: column;
+	margin: 0 25%;
+	width: 50%;
+}
+
+nav > ol > a
+{
+	display: inline-block;
+	width: 50%;
+	margin: 0 25%;
+	text-decoration-style: none;
+	color: #000;
+	text-align: center;
+}
+
+nav > ol > a > i
+{
+	display: inline-block;
+	font-size: 2em;
+	color: #000;
+}
+nav > ol > a:hover
+{
+	color: #000;
+}
+
+/*nav > ol >li
+{
+	position: relative;
+	display: none;
+} zwiniecie listy*/
+
+
+nav > ol > li > a
+{
+	height:38px;
+	line-height: 38px;
+	font-size: 1em;
+}
+
+nav > form
+{
+	margin: 3px 0 10px 0;
+	align-self: center;
+	font-size: 1em;
+	height: 2em;
+	flex:1;
+	/*position: relative;
+	display: none; ukrycie szukaj*/
+}
+
+nav > form span
+{
+	top: 2.5px;
+	right: 15px;
+}
+
+#wrapper
+{
+	width: 90%;
+	margin: 10px 5%;
+}
+
+#sidemenu
+{
+	width: 90%;
+	margin: 0 5%;
+	clear: both;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #fff;
+}
+
+#sidemenu > a
+{
+	display: inline-block;
+	font-size: 1.6em;
+	color: #000;
+	width: 100%;
+	line-height: 200%;
+	background-color: #e7e7e7;
+}
+#sidemenu > a:hover
+{
+	color: #000;
+	background-color: #bebebe;
+}
+
+#sidemenu > a > i
+{
+	display: inline-block;
+	width: 100%;
+}
+
+#sidemenu > ol > li
+{
+	background-color: #e7e7e7;
+	margin-top: 5px;
+}
+
+#sidemenu > ol > li > a/*width i padding dopasowac*/
+{
+	padding: 0;
+	line-height: 300%;
+	width: 100%;
+}
+
+
+#sidemenu > ol > li > ol > li > a/*width i padding dopasowac*/
+{
+	padding-left: 40%;
+	width: 60%;
+	text-align: justify;
+	line-height: 200%;
+}
+
+
+
+#content
+{
+	width: 100%;
+	margin: 20px 0;
+	clear: both;
+}
+
+#map
+{
+	width: 60%;
+	margin-left: 2%;
+}
+
+aside
+{
+	display: none;
+}
+
+.address_data_column 
+{
+    float: left;
+    margin-right: 15px;
+}
+
+footer
+{
+	width: 100%;
+}
+
+}
+
+/*width 350px-767px*/
+@media all and (min-width: 350px) and (max-width: 767px)
+{
+
+body, footer
+{
+	width: 100%;
+	margin:0;
+	padding: 0;
+}
+
+#container
+{
+	width: 100%;
+}
+
+header
+{
+	width: 100%;
+	height: 290px;
+	background-color: #bebebe;
+	background-image: none;
+}
+
+
+#banner
+{
+	width: 16%;
+	top: 30px;
+	text-align: center;
+	display: inline-block;
+}
+
+#top
+{
+	visibility: hidden;
+}
+
+/*main nav*/
+nav
+{
+	flex-direction: column;
+	width:100%;
+	display: inline-flex;
+	font-size: 1.1em;
+	margin-top: 30;
+	align-self: all;
+	text-align: center;
+	overflow-y: scroll;
+	vertical-align: top;
+	background-color: rgba(190, 190, 190, 0.6);
+}
+
+nav:before
+{
+	display: block;
+	content: "  ";
+	font-size: 30px;
+	float: left;
+	background-image: url(menu.jpg);
+	width: 70px;
+	margin-left: 30px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	background-size: 100%;
+	height: 70px;
+	cursor: pointer;
+}
+
+nav > ol
+{
+	flex-direction: column;
+	margin: 0 10%;
+	width: 100px;
+}
+
+nav > ol > li
+{
+	display: none;
+	position: relative;
+}
+
+nav > ol > a
+{
+	display: inline-block;
+	width: 80%;
+	margin: 0 10%;
+	text-decoration-style: none;
+	color: #000;
+	text-align: center;
+}
+
+nav > ol > a > i
+{
+	display: inline-block;
+	font-size: 2em;
+	color: #000;
+}
+nav > ol > a:hover
+{
+	color: #000;
+}
+
+
+nav > ol > li > a
+{
+	height:30px;
+	line-height: 30px;
+}
+
+nav > form
+{
+	margin: 3px 0 10px 0;
+	align-self: center;
+	font-size: 1em;
+	height: 2em;
+	flex:1;
+	position: relative;
+	display: none;
+}
+
+nav > form span
+{
+	top: 2.5px;
+	right: 15px;
+}
+
+#wrapper
+{
+	width: 95%;
+	margin: 10px 2.5%;
+}
+
+#sidemenu
+{
+	width: 90%;
+	margin: 0 5%;
+	clear: both;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #fff;
+}
+
+#sidemenu > a
+{
+	display: inline-block;
+	font-size: 1.6em;
+	color: #000;
+	width: 100%;
+	line-height: 200%;
+	background-color: #e7e7e7;
+}
+#sidemenu > a:hover
+{
+	color: #000;
+	background-color: #bebebe;
+}
+
+#sidemenu > a > i
+{
+	display: inline-block;
+	width: 100%;
+}
+
+#sidemenu > ol > li
+{
+	background-color: #e7e7e7;
+	margin-top: 5px;
+	position: relative;
+	display: none;
+}
+
+#sidemenu > ol > li > a/*width i padding dopasowac*/
+{
+	padding: 0;
+	line-height: 300%;
+	width: 100%;
+}
+
+
+#sidemenu > ol > li > ol > li > a/*width i padding dopasowac*/
+{
+	padding-left: 40%;
+	width: 60%;
+	text-align: justify;
+	line-height: 200%;
+}
+
+#content
+{
+	width: 100%;
+	margin: 20px 0;
+	clear: both;
+}
+
+#map
+{
+	width: 90%;
+	margin: 10px 5%;
+	clear: both;
+}
+
+#contact-form
+{
+	clear: both;
+	width: 245px;
+	margin: 10px 25%;
+}
+
+aside
+{
+	display: none;
+}
+
+.address_data_column 
+{
+    float: left;
+    margin-right: 15px;
+}
+
+
+
+}
